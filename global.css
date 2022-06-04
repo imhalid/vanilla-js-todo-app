@@ -1,0 +1,109 @@
+:root {
+  --dark: hsl(0, 0%, 10%);
+  --darker: hsl(0, 0%, 6%);
+  --darkest: hsl(0, 0%, 5%);
+  --gray: hsl(0, 0%, 50%);
+  --light: hsl(0, 0%, 98%);
+  --pink: hsl(330, 100%, 50%);
+  --purple: hsl(300, 100%, 25%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  padding: 1rem;
+  border: 1px solid var(--gray);
+}
+
+#new-task-input::placeholder {
+  color: var(--gray);
+}
+
+#new-task-submit {
+  color: var(--pink);
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+#tasks .tasks {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--darkest);
+}
+
+#tasks .tasks .content {
+  flex: 1 1 0%;
+}
+
+#tasks .tasks .content .text {
+  color: var(--light);
+  font-size: 1rem;
+}
+
+#tasks .tasks .content .text:not(:read-only) {
+  color: var(--pink);
+}
+
+#tasks .tasks .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.tasks .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task list with vanilla js</title>
+
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <header>
+      <h1>task list with vanilla js</h1>
+      <form id="new-task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="new-task-input"
+          placeholder="add new task this Button"
+        />
+        <input type="submit" id="new-task-submit" value="Add Task" />
+      </form>
+    </header>
+
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+        <div id="tasks">
+          <!--<div class="tasks">
+            <div class="content">
+              <input type="text" class="text" value="my shiny task" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">edit</button>
+              <button class="delete">delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="global.js" defer></script>
+  </body>
+</html>
