@@ -9,35 +9,31 @@
     <link rel="stylesheet" href="global.css" />
   </head>
   <body>
-    <header>
-      <h1>task list with vanilla js</h1>
-      <form id="new-task-form">
-        <input
-          type="text"
-          name="new-task-input"
-          id="new-task-input"
-          placeholder="add new task this Button"
-        />
-        <input type="submit" id="new-task-submit" value="Add Task" />
-      </form>
-    </header>
+    <div class="container">
+      <header>
+        <h1>New task list</h1>
+        <h2>You have <span class="counter">5</span> tasks</h2>
+        <form id="new-task-form">
+          <input
+            type="text"
+            name="new-task-input"
+            id="new-task-input"
+            placeholder="Add a new task..."
+          />
+          <input type="submit" id="new-task-submit" value="Add Task" />
+        </form>
+      </header>
 
-    <main>
-      <section class="task-list">
-        <h2>Tasks</h2>
-        <div id="task">
-          <!--<div class="tasks">
-            <div class="content">
-              <input type="text" class="text" value="my shiny task" readonly />
-            </div>
-            <div class="actions">
-              <button class="edit">edit</button>
-              <button class="delete">delete</button>
-            </div>
-          </div> -->
-        </div>
-      </section>
-    </main>
+      <main>
+        <section class="task-list">
+          <hr />
+          <div id="task">
+            <!-- items -->
+          </div>
+        </section>
+      </main>
+    </div>
+
     <script type="text/javascript" src="global.js" defer></script>
   </body>
 </html>

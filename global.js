@@ -113,6 +113,7 @@ window.addEventListener("load", () => {
     // e.preventDefault();
 
     const task = input.value;
+    input.value = "";
     // create random id
     // const id = Math.floor(Math.random() * 1000000);
 
