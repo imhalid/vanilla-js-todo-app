@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--dark);
+  background-color: var(--light);
   color: var(--light);
 }
 
@@ -44,6 +44,7 @@ header h1 {
 
 input,
 button {
+  color: aliceblue;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
